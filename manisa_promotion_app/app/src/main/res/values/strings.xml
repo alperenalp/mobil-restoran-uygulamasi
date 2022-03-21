@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MANISA TANITIM</string>
+
+    <string-array name="spinner_olcu">
+        <item>Ölçü Seçiniz</item>
+    </string-array>
+</resources>

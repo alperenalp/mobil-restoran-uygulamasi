@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "899798109736",
+    "project_id": "aaurunler45",
+    "storage_bucket": "aaurunler45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899798109736:android:879c8f998b0ad5edb56f1d",
+        "android_client_info": {
+          "package_name": "com.example.aayoreselurunler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899798109736-hkitgvdfa208i6oa9nuq1p1093in7jue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1H6LjoHUCCC6HNdqIfK_cFvXoW066ReE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899798109736-hkitgvdfa208i6oa9nuq1p1093in7jue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

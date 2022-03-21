@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item  android:id="@+id/anasayfa"
+        android:title="AnaSayfa"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/yeniurun"
+        android:title="Yöresel Ürün Ekle" />
+
+    <item  android:id="@+id/hakkimizda"
+        android:title="Hakkımızda" />
+
+    <item  android:id="@+id/cikisyap"
+        android:title="Çıkış Yap"/>
+</menu>

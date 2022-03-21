@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aa_YeniUrunEkle">
+
+    <EditText
+        android:id="@+id/aa_etxt_aciklama"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Ürün Açıklaması"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa_etxt_urun_fiyat" />
+
+    <Spinner
+        android:id="@+id/aa_spinner_olcu"
+        android:layout_width="155dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:entries="@array/spinner_olcu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa_etxt_aciklama" />
+
+    <CheckBox
+        android:id="@+id/aa_cb_taksit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:text="Taksit   "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa_txt_odeme_yontemi" />
+
+    <TextView
+        android:id="@+id/aa_txt_odeme_yontemi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Ödeme Yöntemi Seçiniz:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa_spinner_olcu" />
+
+    <Button
+        android:id="@+id/aa_btn_ekle"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="32dp"
+        android:text="ÜRÜN EKLE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/aa_btn_urun_goster"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:text="Ürünleri Göster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa_btn_ekle" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa_txt_promosyon">
+
+        <RadioButton
+            android:id="@+id/aa_rb_icecek"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="İçecek ekle " />
+
+        <RadioButton
+            android:id="@+id/aa_rb_sos"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Sos ekle  " />
+
+        <RadioButton
+            android:id="@+id/aa_rb_promosyon_yok"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Promosyon Yok  " />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/aa_cb_pesin"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Pesin  "
+        app:layout_constraintStart_toEndOf="@+id/aa_cb_taksit"
+        app:layout_constraintTop_toBottomOf="@+id/aa_txt_odeme_yontemi" />
+
+    <EditText
+        android:id="@+id/aa_etxt_urun_fiyat"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Ürün Fiyatı"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa_etxt_urun_isim" />
+
+    <EditText
+        android:id="@+id/aa_etxt_urun_isim"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ürün İsmi"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa_textView" />
+
+    <TextView
+        android:id="@+id/aa_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="8dp"
+        android:text="Ürün Ekleme Sayfası"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aa_txt_promosyon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Promosyon Seçiniz:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aa_cb_taksit" />
+
+    <ImageView
+        android:id="@+id/aa_iv_fotoyeri"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/aa_etxt_aciklama"
+        app:layout_constraintTop_toBottomOf="@+id/aa_textView"
+        app:srcCompat="@mipmap/aa_ic_launcher_image_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
