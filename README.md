@@ -1,2 +1,2 @@
 # restoran-urunleri-listeleyen-mobil-uygulama
-Local products are taken from the Firebase database and displayed in the main menu
+Android studio'da Java dilini kullanarak yaptığım restoren uygulamam. Firebase veritabanına ürün ekleme ve veritabanından ürünleri çekip listeleme özellikleri mevcut.
